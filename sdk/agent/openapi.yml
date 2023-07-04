@@ -103,15 +103,15 @@ components:
       type: object
       description:
         Variant wrapper containing the real action.
-      required:
-        - input
       properties:
         action_id:
           description: The ID of the action you want to react to (optional)
           type: string
         type:
+          description: Type of the action you want to create
           type: string 
         input:
+          description: Input parameters for the action
           type: object
 
     AgentActionInfo:
@@ -119,12 +119,16 @@ components:
         - $ref: '#/components/schemas/AgentAction'
         - type: object
           required:
-            - output
             - state
           properties:
             output:
+              description: Output of the action
+              type: object
+            deliverables:
+              description: List of deliverables that the action has produced
               type: object
             state:
+              description: The current state of the action
               type: string
               enum:
                 - Pending
