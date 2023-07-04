@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "codegen"
+name = "e2b-api"
 version = "0.1.0"
 description = ""
 authors = ["e2b <hello@e2b.dev>"]

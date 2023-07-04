@@ -1,6 +1,6 @@
 <h1 align="center">
-  <img width="200" src="docs-assets/logoname-black.svg#gh-light-mode-only" alt="e2b">
-  <img width="200" src="docs-assets/logoname-white.svg#gh-dark-mode-only" alt="e2b">
+  <img width="200" src="docs/assets/logoname-black.svg#gh-light-mode-only" alt="e2b">
+  <img width="200" src="docs/assets/logoname-white.svg#gh-dark-mode-only" alt="e2b">
 </h1>
 
 <h2 align="center">Developer-first platform for deploying, testing, and monitoring AI agents</h2>

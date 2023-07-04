@@ -6,7 +6,7 @@
 .vscode
 api-service
 node_modules
-docs-assets
+docs
 .dockerignore
 .env
 .vale.ini

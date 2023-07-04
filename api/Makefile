@@ -1,3 +1,4 @@
+.PHONY: generate-playground-client
 generate-playground-client:
 	npm run --prefix ./playground generate
 	rm -rf ./playground_client
@@ -12,5 +13,17 @@ generate-playground-client:
 	--additional-properties=library=asyncio \
 	--additional-properties=allowStringInDateTimeParameters=false
 
+.PHONY: generate-api-schema
 generate-api-schema:
 	poetry run python3 generate.py
+
+.ONESHELL: install-playground
+.PHONY: install-playground
+playground-install:
+	cd playground
+	npm install
+
+.PHONY: install-api
+playground-install:
+	poetry install --with dev --no-root
+	poetry run opentelemetry-bootstrap -a install
